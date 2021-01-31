@@ -1,0 +1,33 @@
+package com.home.prerp.binarySerach;
+
+import java.util.Arrays;
+
+public class NearlySortedArray {
+
+	public static void main(String[] args) {
+
+		 int[] sortedList = new int [] {5,10,20,40,30};
+			
+			Arrays.sort(sortedList);
+			
+			int target = 30;
+			
+			int result = SortArray(sortedList, target);
+			System.out.println(result);
+		
+	}
+
+	private static int SortArray(int[] sortedList, int target) {
+
+		int start = 0;
+		int end = sortedList.length -1;
+		while( start <= end) {
+			
+			mid = 
+			
+			
+		}
+		return 0;
+	}
+
+}

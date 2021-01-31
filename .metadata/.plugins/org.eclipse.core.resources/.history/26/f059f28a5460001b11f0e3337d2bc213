@@ -1,0 +1,20 @@
+package com.home.prerp.binarySerach;
+
+public class NextAlphElement {
+
+	public static void main(String[] args) {
+
+		char[] c = new char[] {'a','b','c','f','h','k'};
+		
+		char target = 'f';
+		
+		char res = findNextChar(c, target);
+		System.out.println(res);
+	}
+
+	private static char findNextChar(char[] c, char target) {
+		
+		
+	}
+
+}

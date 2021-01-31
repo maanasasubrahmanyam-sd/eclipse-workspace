@@ -1,5 +1,7 @@
 package com.home.prerp.tree;
 
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainTree1 {
 
@@ -25,6 +27,21 @@ public class MainTree1 {
 		
 		int allNodesum = tree.allNode();
 		System.out.println(allNodesum);
+		
+		System.out.println("Inorder traversal");
+		System.out.println(tree.inOrder());
+		
+		List<Integer> i = new ArrayList<>();
+		tree.serialization(i);
+		
+		for(int value : i) {
+			System.out.print(value);
+			System.out.print(",");
+		}
+		
+		String[]s = new String[]{"50","30","20","-1","-1","40","-1","-1","70","60","-1","-1","80","-1","-1"};
+		
+		//tree.deserailization(s);
 		
 		
 	}

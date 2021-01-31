@@ -1,5 +1,8 @@
 package com.home.prerp.tree;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Tree1 {
 
 	private TreeNode1 root;
@@ -12,6 +15,15 @@ public class Tree1 {
 			root.insert(value);
 		}
 		
+	}
+	
+	public void levelOreder(TreeNode1 root) {
+
+		if(root == null) {
+			return ;
+		}else {
+			root.inOrder();
+		}
 	}
 	
 	public Tree1 inOrder( ) { 
@@ -47,4 +59,9 @@ public class Tree1 {
 			return root.allNode(root);
 		}
 	}
+	
+	public void serialization( List<Integer> i) {
+		 root.serialization(root, i);
+	}
+	
 }

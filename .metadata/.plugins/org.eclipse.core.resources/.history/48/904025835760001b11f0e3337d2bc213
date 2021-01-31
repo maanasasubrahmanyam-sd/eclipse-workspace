@@ -1,0 +1,10 @@
+package com.home.prerp.binarySerach;
+
+public class PositionOfElemtInInfinteArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

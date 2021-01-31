@@ -1,7 +1,9 @@
 package com.home.prerp.tree;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 public class TreeNode1 {
 
@@ -98,6 +100,28 @@ public class TreeNode1 {
 		}
 	}
 	
+	public void levelOreder(TreeNode1 root) {
+		
+		if(root == null) {
+			return;
+		}
+		Queue<TreeNode1> q = new LinkedList<TreeNode1>();
+		q.add(root);
+		while(!q.isEmpty()) {
+			q.poll();
+			System.out.println(root.data);
+			
+			if(root.leftChild != null) {
+				q.add(root.leftChild);
+			}
+			if(root.rightChild != null) {
+				q.add(root.rightChild);
+			}
+		}
+		
+		
+	}
+	
 	// check if given node exist
 	public boolean ifNodeExists( TreeNode1 node, int key) {
 		if(node == null) {
@@ -138,6 +162,29 @@ public class TreeNode1 {
 		
 		return 1 + allNode(node.leftChild) + allNode(node.rightChild);
 	}
+	
+	public void serialization(TreeNode1 root, List<Integer> i) {
+		if(root== null) {
+			i.add(-1);
+			return;
+		}
+		i.add(root.data);
+		serialization(root.leftChild, i);
+		serialization(root.rightChild, i);
+		
+	}
+	/*
+	 * static int index = 0;
+	 * 
+	 * public TreeNode1 deserializeUsingStaticCounter(String[] data) { if (index >
+	 * data.length || data[index].equals("null")) { index++; return null; }
+	 * 
+	 * TreeNode1 node = new TreeNode1(Integer.parseInt(data[index++]));
+	 * node.setLeftChild(deserializeUsingStaticCounter(data));
+	 * node.setRightChild(deserializeUsingStaticCounter(data));
+	 * 
+	 * return node; }
+	 */
 
 	public TreeNode1(int data) {
 		this.data = data;
