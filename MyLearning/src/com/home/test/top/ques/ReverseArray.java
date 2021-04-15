@@ -4,6 +4,13 @@ public class ReverseArray {
 
 	public static void main(String[] args) {
 		int[] a = new int[] {1,2,3,4};
+		
+		for(int j =a.length -1; j>=0; j--) {
+			System.out.println(a[j]);
+		}
+			
+		System.out.println("done");
+		
 		int [] b = new int[a.length];
 		int length = 0;
 		

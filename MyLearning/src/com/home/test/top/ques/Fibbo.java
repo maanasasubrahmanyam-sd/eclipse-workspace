@@ -28,7 +28,57 @@ public class Fibbo {
 			System.out.println(sum);
 			//res.add(sum);
 		}
+		System.out.println("res is");
+		fib(10);
 		
 	}
+	
+	
+	
+	
+	public static void fib(int num) {
+	
+		int sum =0;
+		int pre = 1;
+		int onePre = 0;
+		for(int i=0; i<num ; i++) {
+			sum = pre + onePre;
+			onePre = pre;
+			pre = sum;	
+		}
+		
+		System.out.println(sum);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }

@@ -1,9 +1,0 @@
-package com.home.prerp.binarySerach;
-
-public class FloorOfSortedArray {
-
-	public static void main(String[] args) {
-
-	}
-
-}

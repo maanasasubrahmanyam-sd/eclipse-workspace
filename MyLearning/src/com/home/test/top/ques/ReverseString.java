@@ -16,7 +16,10 @@ public class ReverseString {
 		for(char c : ch) {
 			System.out.println(c);
 		}
-		
+		System.out.println("done");
+		for(int i=str.length()-1; i>=0; i--) {
+			System.out.println(str.charAt(i));
+		}
 	}
 
 }
